@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {
+			margin: 0 auto;
+		}
+		.progress_steps {
+			width: 80%;
+			margin: 0 auto;
+		}
+		li {
+			list-style: none;
+			display: inline-block;
+			width: 20%;
+			margin:15px;
+			text-align: center;
+		}
+		a {
+			text-decoration: none;
+		}
+		.progress_bar li {
+	     	width: 30px;
+	     	height: 30px;
+	     	border: 2px solid red;
+	     	content: '';
+	      	text-align: center;
+		    display: block;
+		    border-radius: 20px;
+	  	}
+	  	.progress_bar li{
+	         width: 2em;
+			  height: 2em;
+			  text-align: center;
+			  line-height: 2em;
+			  border-radius: 1em;
+			  background: dodgerblue;
+			  margin: 0 1em;
+			  display: inline-block;
+			  color: white;
+			  position: relative;
+		}
+		li::before{
+		  content: '';
+		  position: absolute;
+		  top: .9em;
+		  left: -4em;
+		  width: 4em;
+		  height: .2em;
+		  background: dodgerblue;
+		  z-index: -1;
+		}
+		li:first-child::before {
+		  display: none;
+		}
+
+		.active {
+		  background: dodgerblue;
+		}
+
+		.active ~ li {
+		  background: lightblue;
+		}
+
+		.active ~ li::before {
+		  background: lightblue;
+		}
+		.disable {
+			pointer-events: none;
+			cursor: default;
+			border: 2px solid pink;
+		}
+	</style>
+</head>
+<body>
+<div class="progress_steps">
+	<ul class="progress_bar">
+		<li><a href="RF.html">1</a></li>
+		<li><a href="second.html">2</a></li>
+		<li class="active"><a href="third.html">3</a></li>
+		<li class="disable"><a href="fourth.html">4</a></li>
+	</ul>
+</div>
+</body>
+</html>
