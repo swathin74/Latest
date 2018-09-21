@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Practice</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+		<style type="text/css">
+			.container{
+				margin-top: 30px;
+			}
+			.left_content, .right_content {
+				width: 50%;
+				float: left;
+			}
+			.img_map{
+				background-size: cover;
+			    width: auto;
+			    height: 438px;
+			    background-image: url(map.png);
+			    background-position: -400px 0px;
+			}
+			.left_content {
+				padding: 50px;
+			    border: 1px solid black;
+			    border-right: none;
+			    margin-top: 3em;
+			}
+			.left_img_content{
+				margin-top: 3em;
+			}
+			.find_office{
+				margin-top: 2em;
+			}
+			.img_border{
+				border: 1px solid black;
+			}
+			.onet {			
+				position: relative;		
+				height: 600px; 			
+				padding: 50px;
+				border: solid 1px silver;						
+			}
+			.rightone {		
+				background-image: url(map.png);
+				/*background-position: -407px -115px;			*/
+				background-repeat: no-repeat;			
+				height: 450px;
+				width: 49%;			
+				display: inline-block;
+				float: left;						
+			}
+			.leftone {				
+				height: 500px;		 
+				width: 49%;				
+				display: inline-block;
+				float: left;
+				padding: 80px;
+			}
+			.brdr {
+				position: absolute;
+			    border: solid 1px black;
+			    height: 70%;
+			    width: 85%;
+			    left: 7%;
+			    top: 11%;
+			}
+		</style>
+	</head>
+	<body>	  
+		<div class="onet">		
+			<div class="leftone">
+				<h2>Explore Locations</h2>
+				<p class="left_img_content">Our industry expertise is backed by decades of in-depth market experience. Click to find your closest Berkadia office and learn more about its offerings.</p>
+				<input type="button" name="find_office" value ="Find Offices" class="find_office">
+			</div>
+			<div class="rightone"></div>		
+			<div class="brdr"></div>
+		</div>
+	</body>
+</html>
